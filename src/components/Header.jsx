@@ -4,6 +4,7 @@ import MenuIcon from "@material-ui/icons/Menu";
 import CloseIcon from "@material-ui/icons/Close";
 import { selectCars } from "../features/car/carSlice";
 import { useSelector } from "react-redux";
+import { Link } from "react-scroll";
 export const Header = () => {
   const [burgerStatus, setBurgerStatus] = useState(false);
   const cars = useSelector(selectCars);
